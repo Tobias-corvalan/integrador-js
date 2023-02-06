@@ -481,19 +481,24 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
+
+
 consoleText(['Proximo gran estreno.', '16 de febrero del 2023. Solo en cines'], 'text',['tomato','rebeccapurple']);
 
 
 //funcion hero 
 
 const hero = document.querySelector(".hero__div");
-
+const text = document.querySelector("#text")
 
 const hero_display = () => {
    setTimeout(() => {
          hero.style.display = "none";
+         text.style.display = "none";
+
    }, 5000);
 }
 
 hero.addEventListener("mouseover",hero_display);
 hero.addEventListener("touch",hero_display);
+hero.addEventListener("Dome")

@@ -1,0 +1,27 @@
+@media (max-width: 1366px){
+
+    .categories{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .btn-controller{
+        width: 100%;
+        right: 0.5%;
+
+    }
+    .container-cards{
+      
+    }
+    
+}
+
+@media (max-width: 1108px){
+
+
+    
+
+}
