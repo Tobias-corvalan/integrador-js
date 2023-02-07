@@ -501,4 +501,15 @@ const hero_display = () => {
 
 hero.addEventListener("mouseover",hero_display);
 hero.addEventListener("touch",hero_display);
-hero.addEventListener("Dome")
+
+//funcion menu burger
+
+const burger = document.querySelector(".nav-burger");
+const nav = document.querySelector(".navbar__ul");
+
+const burger_display = (e) => {
+    burger.classList.toggle("active");
+    nav.classList.toggle("active");
+}
+
+burger.addEventListener("click", burger_display);
