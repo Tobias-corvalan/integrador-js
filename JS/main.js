@@ -1,371 +1,423 @@
 const lista = [
     {
         id: 1,
-        nombre: "spiderman",
+        nombre: "Spiderman Hunter",
+        category: "spiderman",
         descripcion: "",
-        img: "./img/Spiderman-zombie-hunter.jpg",
+        img: "./img/Spiderman/Spiderma-zombie-hunter.jpg",
         precio: 100
     },
     {
         id: 2,
-        nombre: "spiderman",
+        nombre: "Miles Morales",
+        category: "spiderman",
         descripcion: "",
-        img: "../img/Spiderman/Spiderman-Miles-Morales.jpg",
+        img: "./img/Spiderman/Spiderman-Miles-Morales.jpg",
         precio: 100
     },
     {
         id: 3,
-        nombre: "spiderman",
+        nombre: "Spiderman antiock",
+        category: "spiderman",
         descripcion:"",
-        img: "../img/Spiderman/Spiderman-antiOck.jpg ",
+        img: "./img/Spiderman/Spiderman-antiOck.jpg ",
         precio: 100
     },
     {
         id: 4,
-        nombre: "spiderman",
+        nombre: "Spiderman Cyborg",
+        category: "spiderman",
         descripcion: "",
-        img: "../img/Spiderman/Spiderman-Cyborg.jpg" ,
+        img: "./img/Spiderman/Spiderman-Cyborg.jpg" ,
         precio: 100
     },
     {
         id: 5,
-        nombre: "spiderman",
+        nombre: "Spiderman no way home",
+        category: "spiderman",
         descripcion: "",
-        img: "../img/Spiderman/Spiderman-no-way-home.jpg",
+        img: "./img/Spiderman/Spiderman-no-way-home.jpg",
         precio: 100
     },
     {
         id: 6,
-        nombre: "spiderman",
+        nombre: "Spiderman ps4",
+        category: "spiderman",
         descripcion: "",
-        img: "../img/Spiderman/Spiderman-ps4.jpg",
+        img: "./img/Spiderman/Spiderman-ps4.jpg",
         precio: 100
     },
     {
         id: 7,
-        nombre: "spiderman",
+        nombre: "Tobe Maguire",
+        category: "spiderman",
         descripcion: "",
-        img: "../img/Spiderman/Spiderman-Tobey-Maguire.jpg",
+        img: "./img/Spiderman/Spiderman-Tobey-Maguire.jpg",
         precio: 100
     },
     {
         id: 8,
-        nombre: "spiderman",
+        nombre: "Spiderman Casero",
+        category: "spiderman",
         descripcion: "",
-        img: "../img/Spiderman/Spiderman-traje-casero.jpg",
+        img: "./img/Spiderman/Spiderman-traje-casero.jpg",
         precio: 100
     },
     {
         id: 9,
-        nombre: "spiderman",
+        nombre: "Spiderman sigilo",
+        category: "spiderman",
         descripcion: "",
-        img: "../img/Spiderman/Spiderman-traje-sigilo.jpg",
+        img: "./img/Spiderman/Spiderman-traje-sigilo.jpg",
         precio: 100
     },
     {
         id: 10,
-        nombre: "spiderman",
+        nombre: "Spiderman vs Buitre",
+        category: "spiderman",
         descripcion: "",
-        img: "../img/Spiderman/Spiderman-vs-Buitre.jpg",
+        img: "./img/Spiderman/Spiderman-vs-Buitre.jpg",
         precio: 100
     },{
         id: 11,
-        nombre: "capitan america",
+        nombre: "Capitan America 2",
+        category: "capitan",
         descripcion: "",
-        img: "../img/Capitan America/Capitan-America-2.jpg",
+        img: "./img/Capitan/Capitan-America-2.jpg",
         precio: 100
     },
     {
         id: 12,
-        nombre: "capitan america",
+        nombre: "Capitan America 2012",
+        category: "capitan",
         descripcion: "",
-        img: "../img/Capitan America/Capitan-America-2012.jpg",
+        img: "./img/Capitan/Capitan-America-2012.jpg",
         precio: 100
     },
     {
         id: 13,
-        nombre: "capitan america",
+        nombre: "Capitan America EndGame",
+        category: "capitan",
         descripcion: "",
-        img: "../img/Capitan America/Capitan-America-End-Game.jpg",
+        img: "./img/Capitan/Capitan-America-End-Game.jpg",
         precio: 100
     },
     {
         id: 14,
-        nombre: "capitan america",
+        nombre: "Sam Wilson",
+        category: "capitan",
         descripcion: "",
-        img: "../img/Capitan America/Capitan-America-Sam-Wilson.jpg",
+        img: "./img/Capitan/Capitan-America-Sam-Wilson.jpg",
         precio: 100
     },
     {
         id: 15,
-        nombre: "iron man",
+        nombre: "Mark XLVI",
+        category: "iron-man",
         descripcion: "",
-        img: "../img/Iron Man/Iron Man Mark XLVI.jpg",
+        img: "./img/Iron-Man/Iron-Man-Mark-XLVI.jpg",
         precio: 100
     },
     {
         id: 16,
-        nombre: "iron man",
+        nombre: "Mark L",
+        category: "iron-man",
         descripcion: "",
-        img: "../img/Iron Man/Iron-Man-Mark-L.jpg",
+        img: "./img/Iron-Man/Iron-Man-Mark-L.jpg",
         precio: 100
     },
     {
         id: 17,
-        nombre: "iron man",
+        nombre: "Mark LXXXV Tony Stark",
+        category: "iron-man",
         descripcion: "",
-        img: "../img/Iron Man/Iron-Man-Mark-LXXXV-Tony-Stark.jpg",
+        img: "./img/Iron-Man/Iron-Man-Mark-LXXXV-Tony-Stark.jpg",
         precio: 100
     },
     {
         id: 18,
-        nombre: "iron man",
+        nombre: "Mark LXXXV",
+        category: "iron-man",
         descripcion: "",
-        img: "../img/Iron Man/iron-man-mark-lxxxv.jpg",
+        img: "./img/Iron-Man/iron-man-mark-lxxxv.jpg",
         precio: 100
     },
     {
         id: 19,
-        nombre: "iron man",
+        nombre: "Mark XLII",
+        category: "iron-man",
         descripcion: "",
-        img: "../img/Iron Man/Iron-Man-Mark-XLII.jpg",
+        img: "./img/Iron-Man/Iron-Man-Mark-XLII.jpg",
         precio: 100
     },
     {
         id: 20,
-        nombre: "iron man",
+        nombre: "Mark 1",
+        category: "iron-man",
         descripcion: "",
-        img: "../img/Iron Man/Mark-1.jpg",
+        img: "./img/Iron-Man/Mark-1.jpg",
         precio: 100
     },
     {
         id: 21,
-        nombre: "iron man",
+        nombre: "Reactor Arc",
+        category: "iron-man",
         descripcion: "",
-        img: "../img/Iron Man/Reactor-arc.jpg",
+        img: "./img/Iron-Man/Reactor-arc.jpg",
         precio: 100
     },
     {
         id: 22,
-        nombre: "iron man",
+        nombre: "iron-man",
+        category: "iron-man",
         descripcion: "",
-        img: "../img/Iron Man/Tony-Stark.jpg",
+        img: "./img/Iron-Man/Tony-Stark.jpg",
         precio: 100
     },
     {
         id: 23,
-        nombre: "thor",
+        nombre: "Loki 2012",
+        category: "thor",
         descripcion: "",
-        img: "../img/Thor/Loki-2012.jpg",
+        img: "./img/Thor/Loki-2012.jpg",
         precio: 100
     },
     {
         id: 24,
-        nombre: "thor",
+        nombre: "Loki Clasico",
+        category: "thor",
         descripcion: "",
-        img: "../img/Thor/Loki-Clasico.jpg",
+        img: "./img/Thor/Loki-Clasico.jpg",
         precio: 100
     },
     {
         id: 25,
-        nombre: "thor",
+        nombre: "Loki",
+        category: "thor",
         descripcion: "",
-        img: "../img/Thor/Loki.jpg",
+        img: "./img/Thor/Loki.jpg",
         precio: 100
     },
     {
         id: 26,
-        nombre: "thor",
+        nombre: "Mighty Thor",
+        category: "thor",
         descripcion: "",
-        img: "../img/Thor/Mighty-thor.jpg",
+        img: "./img/Thor/Mighty-thor.jpg",
         precio: 100
     },
     {
         id: 27,
-        nombre: "thor",
+        nombre: "Loki Presidente",
+        category: "thor",
         descripcion: "",
-        img: "../img/Thor/Presidente-loki.jpg",
+        img: "./img/Thor/Presidente-loki.jpg",
         precio: 100
     },
     {
         id: 28,
-        nombre: "thor",
+        nombre: "Sylvie",
+        category: "thor",
         descripcion: "",
-        img: "../img/Thor/Sylvie.jpg",
+        img: "./img/Thor/Sylvie.jpg",
         precio: 100
     },
     {
         id: 29,
-        nombre: "thor",
+        nombre: "Thor EndGame",
+        category: "thor",
         descripcion: "",
-        img: "../img/Thor/Thor-EndGame.jpg",
+        img: "./img/Thor/Thor-EndGame.jpg",
         precio: 100
     },
     {
         id: 30,
-        nombre: "thor",
+        nombre: "Thor Love And Thunder",
+        category: "thor",
         descripcion: "",
-        img: "../img/Thor/Thor-Love-And-Thunder.jpg",
+        img: "./img/Thor/Thor-Love-And-Thunder.jpg",
         precio: 100
     },
     {
         id: 31,
-        nombre: "vengadores",
+        nombre: "Tchalla",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Black-Panther-challa.jpg",
+        img: "./img/Vengadores/Black-Panther-challa.jpg",
         precio: 100
     },
     {
         id: 32,
-        nombre: "vengadores",
+        nombre: "Black Panther",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Black-Panther.jpg",
+        img: "./img/Vengadores/Black-Panther.jpg",
         precio: 100
     },
     {
         id: 33,
-        nombre: "vengadores",
+        nombre: "Black Widow",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Black-Widow.jpg",
+        img: "./img/Vengadores/Black-Widow.jpg",
         precio: 100
     },
     {
         id: 34,
-        nombre: "vengadores",
+        nombre: "Bruja escarlata",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Bruja-escarlata.jpg",
+        img: "./img/Vengadores/Bruja-escarlata.jpg",
         precio: 100
     },
     {
         id: 35,
-        nombre: "vengadores",
+        nombre: "Capitana Endgame",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Capitana-Marvel-Endgame.jpg",
+        img: "./img/Vengadores/Capitana-Marvel-Endgame.jpg",
         precio: 100
     },
     {
         id: 36,
-        nombre: "vengadores",
+        nombre: "Capitana Marvel",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Capitana-Marvel.jpg",
+        img: "./img/Vengadores/Capitana-Marvel.jpg",
         precio: 100
     },
     {
         id: 37,
-        nombre: "vengadores",
+        nombre: "Dead Strange",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Dead-Strange.jpg",
+        img: "./img/Vengadores/Dead-Strange.jpg",
         precio: 100
     },
     {
         id: 38,
-        nombre: "vengadores",
+        nombre: "Doctor Strange",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Doctor-Strange.jpg",
+        img: "./img/Vengadores/Doctor-Strange.jpg",
         precio: 100
     },
     {
         id: 39,
-        nombre: "vengadores",
+        nombre: "Hulk",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Hulk.jpg",
+        img: "./img/Vengadores/Hulk.jpg",
         precio: 100
     },
     {
         id: 40,
-        nombre: "vengadores",
+        nombre: "Kate Bishop",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Kate-Bishop.jpg",
+        img: "./img/Vengadores/Kate-Bishop.jpg",
         precio: 100
     },{
         id: 41,
-        nombre: "vengadores",
+        nombre: "Little Groot",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Little-groot.jpg",
+        img: "./img/Vengadores/Little-groot.jpg",
         precio: 100
     },
     {
         id: 42,
-        nombre: "vengadores",
+        nombre: "Rocket",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Rocket.jpg",
+        img: "./img/Vengadores/Rocket.jpg",
         precio: 100
     },
     {
         id: 43,
-        nombre: "vengadores",
+        nombre: "Wolverine",
+        category: "vengadores",
         descripcion: "",
-        img: "../img/Vengadores/Wolverine.jpg",
+        img: "./img/Vengadores/Wolverine.jpg",
         precio: 100
     },
     {
         id: 44,
-        nombre: "villanos",
+        nombre: "Carnage",
         descripcion: "",
-        img: "../img/Villanos/Carnage.jpg",
+        img: "./img/Villanos/Carnage.jpg",
         precio: 100
     },
     {
         id: 45,
-        nombre: "villanos",
+        nombre: "Doc Ock",
+        category: "villanos",
         descripcion: "",
-        img: "../img/Villanos/Doc-Ock.jpg",
+        img: "./img/Villanos/Doc-Ock.jpg",
         precio: 100
     },
     {
         id: 46,
-        nombre: "villanos",
+        nombre: "Duende Verde traje",
+        category: "villanos",
         descripcion: "",
-        img: "../img/Villanos/Duende-verde-traje.jpg",
+        img: "./img/Villanos/Duende-verde-traje.jpg",
         precio: 100
     },
     {
         id: 47,
-        nombre: "villanos",
+        nombre: "Duende Verde",
+        category: "villanos",
         descripcion: "",
-        img: "../img/Villanos/Duende-Verde.jpg",
+        img: "./img/Villanos/Duende-Verde.jpg",
         precio: 100
     },
     {
         id: 48,
-        nombre: "villanos",
+        nombre: "Electro",
+        category: "villanos",
         descripcion: "",
-        img: "../img/Villanos/Electro.jpg",
+        img: "./img/Villanos/Electro.jpg",
         precio: 100
     },
     {
         id: 49,
-        nombre: "villanos",
+        nombre: "Misterio",
+        category: "villanos",
         descripcion: "",
-        img: "../img/Villanos/Misterio.jpg",
+        img: "./img/Villanos/Misterio.jpg",
         precio: 100
     },
     {
         id: 50,
-        nombre: "villanos",
+        nombre: "Thanos Infinity War",
+        category: "villanos",
         descripcion: "",
-        img: "../img/Villanos/Thano-Infinity-war.jpg",
+        img: "./img/Villanos/Thano-Infinity-war.jpg",
         precio: 100
     },
     {
         id: 51,
-        nombre: "villanos",
+        nombre: "Thanos Endgame",
+        category: "villanos",
         descripcion: "",
-        img: "../img/Villanos/Thanos-batalla-final-endgame.jpg",
+        img: "./img/Villanos/Thanos-batalla-final-endgame.jpg",
         precio: 100
     },
     {
         id: 52,
-        nombre: "villanos",
+        nombre: "Thanos",
+        category: "villanos",
         descripcion: "",
-        img: "../img/Villanos/Thanos.jpg",
+        img: "./img/Villanos/Thanos.jpg",
         precio: 100
     },
     {
         id: 53,
-        nombre: "villanos",
+        nombre: "Ultron Infinito",
+        category: "villanos",
         descripcion: "",
-        img: "../img/Villanos/Ultron-Infinito.jpg",
+        img: "./img/Villanos/Ultron-Infinito.jpg",
         precio: 100
     }
 ]
@@ -424,11 +476,6 @@ const prev_section = (e) => {
     container_section.style.transform = "translateX(0%)";
     container_section.style.transition = "all 1s ease";
 }
-
-btn_section.addEventListener("click", next_section);
-btn_section_prev.addEventListener("click", prev_section);
-
-
 // function([string1, string2],target id,[color1,color2])    
 
 
@@ -480,12 +527,6 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
-
-
-
-consoleText(['Proximo gran estreno.', '16 de febrero del 2023. Solo en cines'], 'text',['tomato','rebeccapurple']);
-
-
 //funcion hero 
 
 const hero = document.querySelector(".hero__div");
@@ -499,8 +540,113 @@ const hero_display = () => {
    }, 5000);
 }
 
-hero.addEventListener("mouseover",hero_display);
-hero.addEventListener("touch",hero_display);
+//funcion mostrar productos
+
+const products = size => {
+    let dividedProducts = [];
+    for(let i = 0; i < lista.length; i += size){
+        dividedProducts.push(lista.slice(i, i + size));
+    }
+    return dividedProducts;
+}
+
+
+const productsController = {
+    dividedProducts: products(6),
+    NextProductIndex: 1,
+    productsLimit: products(6).length,
+}
+
+const Products = document.querySelector(".container-productos");
+const ProductsCart = document.querySelector(".container-cart");
+const total = document.querySelector(".total");
+const categories = document.querySelector(".categories");
+const categoriesList = document.querySelectorAll(".category");
+
+const btnload = document.querySelector(".btn-load");
+const buybtn = document.querySelector(".btn-buy");
+const cartCont = document.querySelector(".cart-cont");
+const cartBtn = document.querySelector(".btn-label");
+const btnDelete = document.querySelector(".btn-delete");
+
+let cartitems = JSON.parse(localStorage.getItem("cart")) || [];
+
+const saveLocalStorage = cartlist => {
+    localStorage.setItem("cart", JSON.stringify(cartlist));
+}
+
+const renderProduct = ({id, nombre, category,descripcion,img,precio}) => {
+
+     return `<div class="card-product">
+                <img src=${img} alt="">
+                <div class="product-info">
+                    <h4>${nombre}</h4>
+                    <p>${descripcion}</p>
+                </div>
+                <div class="product-info-buy">
+                    <p>$${precio}</p>
+                    <button class="btn-buy"
+                    data-id=${id}
+                    data-nombre=${nombre}
+                    data-descripcion=${descripcion}
+                    data-img=${img}
+                    data-precio=${precio}>Agregar al carrito</button>
+                </div>
+            </div>`
+}
+
+const renderDividedProducts = (index = 0) => {
+    const productsToRender = productsController.dividedProducts[index];
+    Products.innerHTML += productsToRender.map(renderProduct).join("");
+
+}
+
+const renderFilteredProducts = (category) => {
+    const filteredProducts = lista.filter(product => product.category === category);
+    Products.innerHTML = filteredProducts.map(renderProduct).join("");
+}
+
+const renderProducts = (index = 0, category = null) => {
+
+    if(!category){
+        renderDividedProducts(index)
+    }else{
+        renderFilteredProducts(category);
+    }
+
+}
+
+const isLastIndex = () => productsController.NextProductIndex === productsController.productsLimit;
+
+
+const showMoreProducts = () => {
+    renderProducts(productsController.NextProductIndex);
+    productsController.NextProductIndex++;
+    if(isLastIndex()){
+        btnload.style.display = "none";
+    }
+}
+
+
+
+
+
+const applyFilter = (e) => {
+    e.preventDefault();
+    if(e.target.classList.contains("category"))return;
+    const category = e.target.dataset.category;
+    if(!category){
+        Products.innerHTML = "";
+        renderProducts();
+    }else{
+        renderProducts(0, category);
+    }
+    
+}
+
+
+
+
 
 //funcion menu burger
 
@@ -512,4 +658,32 @@ const burger_display = (e) => {
     nav.classList.toggle("active");
 }
 
-burger.addEventListener("click", burger_display);
+//funcion carrito
+
+const cart_icon = document.querySelector(".cart-label");
+const cart_cont = document.querySelector(".cart-cont");
+const cart = document.querySelector(".cart");
+
+const cart_display = (e) => {
+    cart.classList.toggle("active");
+}
+
+
+
+
+const init = () => {
+
+    renderProducts();
+    btnload.addEventListener("click", showMoreProducts);
+    categories.addEventListener("click", applyFilter);
+    btn_section.addEventListener("click", next_section);
+    btn_section_prev.addEventListener("click", prev_section);
+    consoleText(['Proximo gran estreno.', '16 de febrero del 2023. Solo en cines'], 'text',['tomato','rebeccapurple']);
+    hero.addEventListener("mouseover",hero_display);
+    hero.addEventListener("touch",hero_display);
+    burger.addEventListener("click", burger_display);
+    cart_icon.addEventListener("click", cart_display);
+
+}
+
+init();

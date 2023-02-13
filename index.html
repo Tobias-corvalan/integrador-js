@@ -18,13 +18,13 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <a href="" class="img-marvel__a"><img src="./img/Marvel_Logo.jpg" alt="" class="img-marvel burger-marvel"></a>
+            <a href="" class="img-marvel__a-burger"><img src="./img/Marvel_Logo.jpg" alt="" class="img-marvel burger-marvel"></a>
             <ul class="navbar__ul">
                 <li class="navbar__ul__li">
                     <div class="navbar__ul__li-div">
                         <a href="">Inicio</a>
-                        <a href="">Novedades</a>
-                        <a href="">Sobre Nosotros</a>
+                        <a href="#new">Novedades</a>
+                        <a href="#new">Sobre Nosotros</a>
                     </div>
                 </li>
                 <li>
@@ -32,19 +32,47 @@
                 </li>
                 <li class="navbar__ul__li">
                     <div class="navbar__ul__li-div">
-                        <a href="">Productos</a>
+                        <a href="#productos">Productos</a>
                         <a href="">Iniciar Sesion</a>
-                        <a href="">Contacto</a>
+                        <a href="#contacto">Contacto</a>
                         
                     </div>
                 </li>
             </ul>
             <div class="cart-label">
-
                 <i class="fa-sharp fa-solid fa-cart-shopping cart-icon">
                     <div class="cart-cont">0</div>
                 </i>
+            </div>
+            <div class="cart">
+                <h2>Tus Productos</h2>
+                
+                <div class="container-cart">
+                    <div class="cart-item">
+                        <img src="./assets/Productos/godzilla-product.jpg" alt="">
+                        <div class="item-info">
+                        <h3 class="item-title">Godzilla</h3>
+                        <p class="item-bid">Cabeza de godzilla junto a replica del habitat</p>
+                        <span class="item-price">$140000</span>
+                        </div>
+                        <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
 
+                </div>
+
+                  <span class="divider"></span>
+
+              <div class="cart-total">
+                <p>Total: </p>
+                <span class="total">$140000</span>
+              </div>
+              <button class="btn-label">Comprar</button>
+              <button class="btn-delete">Vaciar Carrito</button>
+              </div>
             </div>
         </nav>
     </header>
@@ -55,9 +83,9 @@
                 <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
             </div>
                 <img src="https://i.blogs.es/34b42c/ant-man_and_the_wasp_quantumania_-_primer_afiche-2-/1366_2000.jpeg" alt="">
-                <button class="hero__btn">Más informacion</button>
+                <a href="https://www.youtube.com/watch?v=LQ0lEKEEsfc&ab_channel=SensaCineTRAILERS" target="_blank"><button class="hero__btn">Más informacion</button></a>
         </section>
-        <section class="new">
+        <section id="new">
             <div class="carrusel__section">
                 <div class="container__section">
                     <div class="new__container">
@@ -67,34 +95,43 @@
                                 <div class="card">
                                     <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/secret-invasion-1621099799.jpg?resize=768:*" alt="">
                                     <div class="card-text">
-                                        <h3>Secret invasion</h3>
                                         <p>Una raza de cambiaformas extraterrestres del planeta Skrull se embarca en una misión para 
                                             infiltrarse en todos los aspectos de la vida en la Tierra,
                                             cuando ocurre un ataque que lo cambia todo. La serie constará de 6 episodios, 
                                             Secret Invasion llegará a Disney+ <span>en la primavera de 2023</span>
                                         </p>
-                                        <a href="">Mas informacion</a>
+                                        <a href="https://www.youtube.com/watch?v=sQY6Umchw2M&ab_channel=MarvelLatinoam%C3%A9ricaOficial" target="_blank" >Mas informacion</a>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <img src="./img/hero/got3.jpg" alt="">
                                     <div class="card-text">
-                                        <p>Secret invasion</p>
-                                        <a href="">Mas informacion</a>
+                                        <p>Los Guardianes de la Galaxia se están adaptando a la vida en Knowhere, 
+                                            pero su existencia se ve alterada por los ecos del pasado de Rocket. 
+                                            Peter Quill debe liderar a los Guardianes en una peligrosa misión para proteger a 
+                                            Rocket que podría llevar a la disolución del equipo.</p>
+                                        <a href="https://www.youtube.com/watch?v=qAkCoX760xQ&ab_channel=MarvelLatinoam%C3%A9ricaOficial" target="_blank">Mas informacion</a>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <img src="./img/hero/The_Marvels_Logo.jpg" alt="">
                                     <div class="card-text">
-                                        <p>Secret invasion</p>
-                                        <a href="">Mas informacion</a>
+                                        <p>Carol Danvers, también conocida como Capitana Marvel, ha reclamado su identidad de los tiránicos Kree 
+                                            y se ha vengado de la Inteligencia Suprema. 
+                                            Pero las consecuencias hacen que Carol cargue con el peso de un universo desestabilizado. 
+                                            Cuando sus deberes la envían a un agujero de gusano anómalo vinculado a un revolucionario Kree, 
+                                            sus poderes se enredan con los de la super-fan de Jersey City, Kamala Khan, también conocida como Ms. Marvel, 
+                                            y la sobrina separada de Carol, la capitana Monica Rambeau. Juntas, este trío improbable debe unirse y 
+                                            aprender a trabajar al unísono para salvar el universo como The Marvels</p>
+                                        <a href="" target="_blank">Mas informacion</a>
                                     </div>	
                                 </div>
                                 <div class="card">
                                     <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2022/12/spiderverseextendedposter.jpg" alt="">
                                     <div class="card-text">
-                                        <p>Secret invasion</p>
-                                        <a href="">Mas informacion</a>
+                                        <p>Miles Morales emprende una aventura a través del multiverso con Gwen Stacy 
+                                            y un nuevo equipo de la Spider People que deben enfrentar a un poderoso villano.</p>
+                                        <a href="https://www.youtube.com/watch?v=oFljKKqw8AI&ab_channel=SensaCineTRAILERS" target="_blank">Mas informacion</a>
                                     </div>	
                                 </div>
                             </div>
@@ -142,54 +179,48 @@
         <section id="productos">
             <h2>Productos</h2>
             <div class="categories">
-                <button class="category monsters"><img src="./img/icon-category/Symbol_from_Marvel's_The_Avengers_logo.svg.png" alt=""></button>
-                <button class="category spiderman"><img src="./img/icon-category/83074-spiderman-venom-youtube-symmetry-area-free-hq-image.png" alt=""></button>
-                <button class="category iron-man"><img src="./img/icon-category/52600-200.png" alt=""></button>
-                <button class="category ghidora"><img src="./img/icon-category/800px-Captain_America_Shield.svg.png" alt=""></button>          
-                <button class="category rodan"><img src="./img/icon-category/super+thor+wings+icon-1320166699905266736.png" alt=""></button>
-                <button class="category kong"><img src="./img/icon-category/ultron.png" alt=""></button>
+                <button class="category avengers"><img src="./img/icon-category/Symbol_from_Marvel's_The_Avengers_logo.svg.png" alt=""></button>
+                <button class="category spiderman" data-category="spiderman"><img src="./img/icon-category/83074-spiderman-venom-youtube-symmetry-area-free-hq-image.png" data-category="spiderman"alt=""></button>
+                <button class="category iron-man" data-category="iron-man"><img src="./img/icon-category/52600-200.png" data-category="iron-man"alt=""></button>
+                <button class="category capitan" data-category="capitan"><img src="./img/icon-category/800px-Captain_America_Shield.svg.png"data-category="capitan" alt=""></button>          
+                <button class="category thor" data-category="thor"><img src="./img/icon-category/super+thor+wings+icon-1320166699905266736.png"data-category="thor" alt=""></button>
+                <button class="category villanos" data-category="villanos"><img src="./img/icon-category/ultron.png" alt=""data-category="villanos"></button>
               </div>
             </div>
-            <div class="container-productos">
-                <div class="card-product">
-                    <img src="./assets/Productos/godzilla-product.jpg" alt="">
-                    <div class="product-info">
-                        <h4>Godzilla</h4>
-                        <p>Cabeza de godzilla junto a replica del habitat</p>
-                    </div>
-                    <div class="product-info-buy">
-                        <p>$140000</p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="card-product">
-                    <img src="./assets/Productos/kong-produtc.jpg" alt="">
-                    <div class="product-info">
-                        <h4>Kong</h4>
-                        <p>Cabeza de Kong junto a replica del habitat</p>
-                    </div>
-                    <div class="product-info-buy">
-                        <p>$140000</p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="card-product">
-                    <img src="./assets/Productos/mechagodzilla-product.jpg" alt="">
-                    <div class="product-info">
-                        <h4>Mechagodzilla</h4>
-                        <p>Cuerpo entero de mechagodzilla</p>
-                    </div>
-                    <div class="product-info-buy">
-                        <p>$140000</p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                </div>
+            <div class="container-productos"></div>
+            <button class="btn-load">Ver Más</button>
         </section>
          <span class="div"></span>
-        <footer>
-
-        </footer>
     </main>
+        <footer id = "contacto">
+            <h2 >Contacto</h2>
+            <div class="container-footer">
+                <div class="footer__info">
+                    <h3>Informacion</h3>
+                    <ul>
+                        <li><a href="#new">Sobre nosotros</a></li>
+                        <li><a href="">Politicas de privacidad</a></li>
+                        <li><a href="">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h3>Telefono</h3>
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-phone"></i>+57 300 000 0000</a></li>
+                        <li><a href=""><i class="fa-solid fa-phone"></i>+57 300 000 0000</a></li>
+                        <li><a href=""><i class="fa-solid fa-phone"></i>+57 300 000 0000</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3>Siguenos</h3>
+                    <ul>
+                        <li><a href=""><i class="fa-sharp fa-brands fa-facebook f"></i></a></li>
+                        <li><a href=""><i class="fa-sharp fa-brands fa-instagram ig"></i></a></li>
+                        <li><a href=""><i class="fa-sharp fa-brands fa-twitter tw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     
 
     
