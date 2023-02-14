@@ -575,7 +575,7 @@ const saveLocalStorage = cartlist => {
     localStorage.setItem("cart", JSON.stringify(cartlist));
 }
 
-const renderProduct = ({id, nombre, category,descripcion,img,precio}) => {
+const renderProduct = ({id, nombre,descripcion,img,precio}) => {
 
      return `<div class="card-product">
                 <img src=${img} alt="">
@@ -586,11 +586,11 @@ const renderProduct = ({id, nombre, category,descripcion,img,precio}) => {
                 <div class="product-info-buy">
                     <p>$${precio}</p>
                     <button class="btn-buy"
-                    data-id=${id}
-                    data-nombre=${nombre}
-                    data-descripcion=${descripcion}
-                    data-img=${img}
-                    data-precio=${precio}>Agregar al carrito</button>
+                    data-id='${id}'
+                    data-nombre='${nombre}'
+                    data-descripcion='${descripcion}'
+                    data-img='${img}'
+                    data-precio='${precio}'>Agregar al carrito</button>
                 </div>
             </div>`
 }
@@ -627,14 +627,26 @@ const showMoreProducts = () => {
     }
 }
 
+const changeShowMoreBtnState = (category) => {
+    if(!category){
+        btnload.classList.remove("hidden");
+        return;
+    }
+    btnload.classList.add("hidden");
 
+}
 
+const changeFilterState = (category) => {
+    changeShowMoreBtnState(category);
+}
 
 
 const applyFilter = (e) => {
     e.preventDefault();
     if(e.target.classList.contains("category"))return;
     const category = e.target.dataset.category;
+    changeFilterState(category);
+    console.log(category)
     if(!category){
         Products.innerHTML = "";
         renderProducts();
@@ -656,6 +668,9 @@ const nav = document.querySelector(".navbar__ul");
 const burger_display = (e) => {
     burger.classList.toggle("active");
     nav.classList.toggle("active");
+    if(cart.classList.contains("active")){
+        cart.classList.remove("active");
+    }
 }
 
 //funcion carrito
@@ -663,16 +678,121 @@ const burger_display = (e) => {
 const cart_icon = document.querySelector(".cart-label");
 const cart_cont = document.querySelector(".cart-cont");
 const cart = document.querySelector(".cart");
+const container_cart = document.querySelector(".container-cart");
+const successModal = document.querySelector(".add-modal");
 
 const cart_display = (e) => {
     cart.classList.toggle("active");
+    if(nav.classList.contains("active")){
+        nav.classList.remove("active");
+        burger.classList.remove("active");
+    }
 }
+
+//funcion render carrito
+
+const rendercartProduct = ({id, nombre, descripcion, img, precio,quantity}) => {
+         return `<div class="cart-item">
+                    <img src="${img}" alt="">
+                    <div class="item-info">
+                        <h3 class="item-title">${nombre}</h3>
+                        <p class="item-bid">${descripcion}</p>
+                        <span class="item-price">$${precio}</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down" data-id="${id}">-</span>
+                        <span class="item-quantity">${quantity}</span>
+                        <span class="quantity-handler up" data-id="${id}">+</span>
+                     </div>
+                 </div>`
+}
+
+const getcartTotal = () => {
+    return cartitems.reduce((acc, currentValue) => acc + Number(currentValue.precio) * currentValue.quantity, 0);
+}
+
+const showTotal = () => {
+    total.innerHTML = `$${getcartTotal().toFixed(2)}`
+}
+
+const renderCart = (cartlist) => {
+    if(!cartitems.length){
+        container_cart.innerHTML = `<h2 class="empty-cart">El carrito esta vacio</h2>`;
+        return;
+    }
+    container_cart.innerHTML = cartitems.map(rendercartProduct).join("");
+
+}
+
+//Agregar productos al carrito
+
+const createCartProduct = (product) => {
+    cartitems = [...cartitems, {...product, quantity: 1}];
+}
+
+const isExistingCartProduct = (product) => {
+    return cartitems.some(cartitem => cartitem.id === product.id);
+}
+
+const showSuccessModal = (msg) => {
+    successModal.classList.add("active-modal");
+    successModal.textContent = msg;
+    setTimeout(() => {
+        successModal.classList.remove("active-modal");
+    }, 1500);
+}
+
+const checkcartState = () => {
+    saveLocalStorage();
+    renderCart();
+    showTotal();
+}
+
+const addUnitToProduct = (product) => {
+    cartitems = cartitems.map(cartitem => cartitem.id === product.id ? 
+        {...cartitem, quantity: cartitem.quantity + 1} : cartitem);
+}
+
+
+const addProducts = (e) => {
+    if(!e.target.classList.contains("btn-buy"))return;
+    const product = {id, nombre, descripcion, img, precio} = e.target.dataset;
+    if(isExistingCartProduct(product)){
+        addUnitToProduct(product);
+        showSuccessModal("Se agrego una unidad al producto");
+    }else{
+        createCartProduct(product);
+        showSuccessModal("Producto agregado al carrito");
+    }
+
+    checkcartState();
+}
+
+//funcion cerrar menu al hacer scroll
+
+const closeOnScroll = () => {
+    if(!nav.classList.contains("active") && !cart.classList.contains("active"))return;
+    nav.classList.remove("active");
+    burger.classList.remove("active");
+    cart.classList.remove("active");
+}
+
+//funcion cerrar menu al hacer click
+
+const closeOnClick = (e) => {
+    if(!e.target.classList.contains("navbar-link"))return;
+    nav.classList.remove("active");
+    burger.classList.remove("active");
+}
+
 
 
 
 
 const init = () => {
 
+    window.addEventListener("scroll", closeOnScroll); 
+    nav.addEventListener("click", closeOnClick);
     renderProducts();
     btnload.addEventListener("click", showMoreProducts);
     categories.addEventListener("click", applyFilter);
@@ -683,6 +803,11 @@ const init = () => {
     hero.addEventListener("touch",hero_display);
     burger.addEventListener("click", burger_display);
     cart_icon.addEventListener("click", cart_display);
+
+    document.addEventListener("DOMContentLoaded", renderCart);
+    document.addEventListener("DOMContentLoaded", showTotal);
+
+    Products.addEventListener("click", addProducts);
 
 }
 
