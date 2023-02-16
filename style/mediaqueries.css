@@ -3,9 +3,9 @@
     .categories{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
 
     .btn-controller{
@@ -13,15 +13,12 @@
         right: 0.5%;
 
     }
-    .container-cards{
-      
-    }
-    
 }
 @media (max-width: 1300px){
 
     .categories{
-        gap: 10px;
+        gap: 50px;
+        justify-content: space-around;
     }
 }
     

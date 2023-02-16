@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/icon-page3.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="./style/mediaqueries.css">
     <title>Document</title>
 </head>
-<body>
-    
+<body class="login-body">
+    <header>
+        <nav class="navbar login">
+            <a href="./index.html" ><img src="./img/Marvel_Logo.jpg" alt="" class="img-marvel login-marvel"></a>
+        </nav>
+    </header>
+        <h1>Iniciar Sesion</h1> 
+        <section>
+            <form action="" class="form__container" id="form">
+            <p class="form__title">Ingrese a su cuenta para hacer un seguimiento a sus pedidos</p>
+                <div class="form__field">
+                    <input type="text" placeholder="Email" class="form__input" id="email">
+                    <small></small>
+                </div>
+                <div class="form__field">
+                    <input type="text" placeholder="Contraseña" class="form__input" id="password">
+                    <small></small>
+                </div>
+                <p>Si aun no tiene cuenta haga <a href="./register.html">click aca</a></p>
+                <input type="submit" class="form__submit_btn" value="Enviar">
+            </form>
+        </section>
 </body>
 </html>
