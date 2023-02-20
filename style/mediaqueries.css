@@ -17,7 +17,7 @@
 @media (max-width: 1300px){
 
     .categories{
-        gap: 50px;
+        gap: 20px;
         justify-content: space-around;
     }
 }
@@ -29,23 +29,20 @@
         gap: 50px;
     }
     .categories{
-        gap: 10px;
+        gap: 20px;
     }
 }
 @media (max-width: 1206px){
 
     .categories{
-        gap: 5px;
+        gap: 20px;
     }
 }
     
 @media (max-width: 1181px){
 
     .categories{
-        gap: 30px;
-    }
-    .category{
-        padding: 5px 100px;
+        gap: 20px;
     }
 }
     
@@ -64,6 +61,13 @@
     }
     .container-btn{
         width: 100%;
+    }
+    .categories{
+        gap: 20px;
+    }
+
+    .category{
+        padding: 5px 30px;
     }
     .btn-controller button{
         font-size: 25px;
@@ -131,6 +135,38 @@
 
     
 }
+@media (max-width: 800px){
+
+    .categories{
+        gap: 20px;
+    }
+    .category{
+        padding: 5px 20px;
+    }
+    #contacto{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-footer{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 700px){
+
+    .categories{
+        gap: 10px;
+    }
+    .category{
+        padding: 5px 50px;
+    }
+}
 
 
 @media (max-width: 666px){
@@ -163,6 +199,39 @@
     .abouts__us-cards img{
         width: 100px;
     }
+    .btn-section-prev{
+        top: 50px;
+    }
+  
+    .container-footer{
+        flex-direction: column-reverse;
+        
+    }
+    .footer__social ul li a{
+      font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+
+    .hero__btn{
+        left: 25%;
+    }
+    .abouts__us-cards{
+        text-align: center;
+        gap: 10px;
+    }
+    .abouts__us-cards h3{
+        font-size: 20px;
+    }
+    .abouts__us-cards p{
+        font-size: 15px;
+    }
+    .abouts__us-cards img{
+        width: 100px;
+    }
+
     footer{
         font-size: 10px;
     }
@@ -188,8 +257,6 @@
          flex-direction: row;
          gap: 10px;
     }
-
-
     
 }
     
