@@ -6,7 +6,7 @@ const password = document.querySelector("#password");
 
 const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const PASSWORD_REGEX = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-const PHONE_REGEX = /^[0-9]{11}$/;
+const PHONE_REGEX = /^[0-9]{10}$/;
 
 const isEmpty = value => value === "";
 
@@ -122,6 +122,7 @@ const checkPassword = () => {
     return valid;
 }
 
+
 form.addEventListener("submit",e =>{
     e.preventDefault();
 
@@ -132,6 +133,10 @@ form.addEventListener("submit",e =>{
 
     const formValid = usernameValid && emailValid && passwordValid && passwordValid;
 
-    console.log("form valido")
+   if(formValid){
+       form.submit();
+       alert("Usuario creado correctamente");
+       window.location.href = "index.html";
+   }
 
 })

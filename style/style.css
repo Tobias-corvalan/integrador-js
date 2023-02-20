@@ -274,7 +274,7 @@ main{
     flex-direction: column;
 }
 
-/*register body*/
+/*login body*/
 
 .login-body{
     display: flex;
@@ -282,20 +282,39 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black;
+    background: url(https://pa1.narvii.com/6150/898b7f37d5f560a78433f600795b196525ed472f_hq.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
-.login-body h1{
+.container-form h1{
     color: white;
     font-family: 'Bungee Shade', cursive;
     font-size: 50px;
-    margin-bottom: 20px;
 }
+
+.container-form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: 1px solid white;
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.5);
+}
+
 .form__container{
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
     align-items: center;
+
 }
 .form__field{
     display: flex;
@@ -315,7 +334,7 @@ main{
 }
 
 .form__field small{
-    color: #dc3545;
+    color: white;
     max-width: 280px;
     text-align: center;
     padding: 6px 0;
@@ -328,7 +347,53 @@ main{
     border-color: red;
 }
 
+.form__container p{
+    color: white;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 20px;
+    font-weight: 400;
+}
+.form__container p a{
+    color: red;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.form__submit_btn{
+    background-color: blue;
+    color: white;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+.login{
+    background-color: black;
+}
+.register{
+    margin-top: 85px;
+    gap: 5px;
+    padding: 5px 40px;
+
+}
+
+
+.register-body{
+    background: url(../img/marvel-avenger.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*termina login body*/
+
+
+
+
 
 
 
